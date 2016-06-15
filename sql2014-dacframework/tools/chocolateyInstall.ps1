@@ -1,28 +1,26 @@
-$package = 'sql2014-dacframework'
+﻿$ErrorActionPreference = 'Stop';
 
-try {
-  $params = @{
-    packageName = $package;
-    fileType = 'msi';
-    silentArgs = '/quiet';
-    url = 'https://download.microsoft.com/download/B/8/C/B8C77167-AF51-4202-9AFD-A147A88F1D5B/en-EN/x86/DACFramework.msi';  
-    url64bit = 'https://download.microsoft.com/download/B/8/C/B8C77167-AF51-4202-9AFD-A147A88F1D5B/en-EN/x64/DACFramework.msi';
-  }
 
-  Install-ChocolateyPackage @params
+$packageName= 'sql2014-dacframework'
+$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url        = 'https://download.microsoft.com/download/B/8/C/B8C77167-AF51-4202-9AFD-A147A88F1D5B/en-EN/x86/DACFramework.msi'
+$url64      = 'https://download.microsoft.com/download/B/8/C/B8C77167-AF51-4202-9AFD-A147A88F1D5B/en-EN/x64/DACFramework.msi'
 
-  # install both x86 and x64 editions of SMO since x64 supports both
-  # to install both variants of powershell, both variants of SMO must be present
-  $IsSytem32Bit = (($Env:PROCESSOR_ARCHITECTURE -eq 'x86') -and `
-    ($Env:PROCESSOR_ARCHITEW6432 -eq $null))
-  if (!$IsSytem32Bit)
-  {
-    $params.url64bit = $params.url
-    Install-ChocolateyPackage @params
-  }
+$packageArgs = @{
+  packageName   = $packageName
+  unzipLocation = $toolsDir
+  fileType      = 'EXE_MSI_OR_MSU'
+  url           = $url
+  url64bit      = $url64
 
-  Write-ChocolateySuccess $package
-} catch {
-  Write-ChocolateyFailure $package "$($_.Exception.Message)"
-  throw
+  silentArgs    = "/qn /norestart /l*v `"$env:TEMP\chocolatey\$($packageName)\$($packageName).MsiInstall.log`""
+  validExitCodes= @(0, 3010, 1641)
+
+  softwareName  = 'sql2014-dacframework*'
+  checksum      = ''
+  checksumType  = 'md5'
+  checksum64    = ''
+  checksumType64= 'md5'
 }
+
+Install-ChocolateyPackage @packageArgs
