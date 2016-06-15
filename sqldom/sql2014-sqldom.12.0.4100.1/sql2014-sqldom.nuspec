@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>sql2014-sqldom</id>
+    <version>12.0.4100.1</version>
+    <title>Microsoft® SQL Server® 2014 Transact-SQL ScriptDom</title>
+    <authors>Microsoft</authors>
+    <owners>john.bowker</owners>
+    <licenseUrl>https://www.microsoft.com/en-us/download/details.aspx?id=42295</licenseUrl>
+    <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=42295</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Microsoft SQL Server Transact-SQL ScriptDom is a .NET Framework API that provides parsing and scripting services for Transact-SQL. This API supports SQL Server 2005, SQL Server 2008, SQL Server 2008 R2, SQL Server 2012 and SQL Server 2014 versions.</description>
+    <summary>Microsoft SQL Server Transact-SQL ScriptDom is a .NET Framework API that provides parsing and scripting services for Transact-SQL. This API supports SQL Server 2005, SQL Server 2008, SQL Server 2008 R2, SQL Server 2012 and SQL Server 2014 versions.</summary>
+    <releaseNotes />
+    <copyright>Microsoft</copyright>
+    <tags>SQL SQL2014 .NET DOM</tags>
+  </metadata>
+</package>

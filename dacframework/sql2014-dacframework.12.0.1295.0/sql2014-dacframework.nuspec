@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>sql2014-dacframework</id>
+    <version>12.0.4100.1</version>
+    <title>Microsoft® SQL Server® Data-Tier Application Framework (May 2015)</title>
+    <authors>Microsoft</authors>
+    <owners>Sjappetano</owners>
+    <licenseUrl>https://www.microsoft.com/en-us/download/details.aspx?id=46696</licenseUrl>
+    <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=46696</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Microsoft SQL Server Data-Tier Application Framework (May 2015) provides application lifecycle services for database development and management</description>
+    <summary>The Microsoft SQL Server Data-Tier Application Framework (May 2015) provides application lifecycle services for database development and management</summary>
+    <releaseNotes />
+    <copyright>Microsoft</copyright>
+    <tags>SQL SQL2014 .NET DAC</tags>
+    <dependencies>
+      <dependency id="sql2014.clrtypes" version="12.0.4100.1" />
+    </dependencies>
+  </metadata>
+</package>

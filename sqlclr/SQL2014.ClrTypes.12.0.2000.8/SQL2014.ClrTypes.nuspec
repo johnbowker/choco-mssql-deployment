@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>SQL2014.ClrTypes</id>
+    <version>12.0.4100.1</version>
+    <title>Microsoft SQL Server 2014 System CLR Types</title>
+    <authors>Microsoft</authors>
+    <owners>john.bowker</owners>
+    <projectUrl>http://www.microsoft.com/en-ca/download/details.aspx?id=42295</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The SQL Server System CLR Types package contains the components implementing the new geometry, geography, and hierarchyid types in SQL Server 2014. This component can be installed separately from the server to allow client applications to use these types outside of the server.</description>
+    <summary>Microsoft SQL Server 2014 Feature Pack
+
+      The SQL Server System CLR Types package contains the components implementing the new geometry, geography, and hierarchyid types in SQL Server 2014. This component can be installed separately from the server to allow client applications to use these types outside of the server.</summary>
+    <releaseNotes />
+    <tags>SQL SQL2014 .NET CLR</tags>
+  </metadata>
+</package>
