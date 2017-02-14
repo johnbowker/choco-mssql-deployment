@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>sql2016-dacframework</id>
+    <version>13.0.3485.1</version>
+    <title>Microsoft® SQL Server® Data-Tier Application Framework (October 23 2016)</title>
+    <authors>Microsoft</authors>
+    <owners>pieter.lazzaro, john.bowker</owners>
+    <licenseUrl>https://www.microsoft.com/en-us/download/details.aspx?id=54106</licenseUrl>
+    <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=54106</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Microsoft SQL Server Data-Tier Application Framework (October 23 2016) provides application lifecycle services for database development and management.</description>
+    <summary>The Microsoft SQL Server Data-Tier Application Framework (October 23 2016) provides application lifecycle services for database development and management.</summary>
+    <tags>SQL SQL2016 admin DAC</tags>
+    <packageSourceUrl>https://github.com/johnbowker/choco-mssql-deployment</packageSourceUrl>
+    <dependencies>
+      <dependency id="sql2016-clrtypes" version="[13.0.1601.5]" />
+      <dependency id="chocolatey-uninstall.extension" />
+    </dependencies>
+  </metadata>
+</package>

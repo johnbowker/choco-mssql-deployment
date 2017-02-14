@@ -23,9 +23,11 @@ function Build-ChocoPackage($PackageName)
 function Main()
 {
     $Packages = (
-        "SQL2014.ClrTypes", 
-        "sql2014-dacframework", 
-        "sql2014-sqldom"
+        "SQL2014.ClrTypes",
+        "sql2014-dacframework",
+        "sql2014-sqldom",
+        "sql2016-dacframework",
+        "sql2016-clrtypes"
         )
 
     foreach($Package in $Packages)
