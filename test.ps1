@@ -30,9 +30,9 @@ function Test-SQLDom()
 
 function Test-CLRTypes()
 {
-    #$PackageName = "SQL2014.ClrTypes"
-    #Install-ChocoPackage -PackageName $PackageName -PackageSourceDirectory (Get-Item -Path ".\" -Verbose).FullName
-    #UnInstall-ChocoPackage -PackageName $PackageName
+    $PackageName = "SQL2014.ClrTypes"
+    Install-ChocoPackage -PackageName $PackageName -PackageSourceDirectory (Get-Item -Path ".\" -Verbose).FullName
+    UnInstall-ChocoPackage -PackageName $PackageName
 
     $PackageName = "sql2016-clrtypes"
     Install-ChocoPackage -PackageName $PackageName -PackageSourceDirectory (Get-Item -Path ".\" -Verbose).FullName
@@ -43,5 +43,5 @@ function Test-CLRTypes()
 Invoke-Expression "$PSScriptRoot\build.ps1"
 
 Test-CLRTypes
-#Test-SQLDom
-#Test-DACFramework
+Test-SQLDom
+Test-DACFramework
