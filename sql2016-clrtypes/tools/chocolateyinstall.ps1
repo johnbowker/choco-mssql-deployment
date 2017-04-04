@@ -26,7 +26,13 @@ if (!$IsSystem32Bit) {
   Write-Host 'Installing 32bit version with 64bit.'
   $packageArgs.url64bit = $params.url
   Install-ChocolateyPackage @packageArgs
+  
+  $packageArgs.url64bit = $params.url64bit
+  Install-ChocolateyPackage @packageArgs
+}
+else {
+  Write-Host 'Installing 32bit version.'
+  Install-ChocolateyPackage @packageArgs
 }
 
-$packageArgs.url64bit = $params.url64bit
-Install-ChocolateyPackage @packageArgs
+
