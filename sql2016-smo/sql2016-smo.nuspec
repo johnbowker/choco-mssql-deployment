@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sql2016-smo</id>
-    <version>13.0.1601.5</version>
+    <version>13.0.5026.0</version>
     <title>Microsoft Shared Management Objects for SQL Server 2016</title>
     <authors>Microsoft</authors>
     <owners>john.bowker</owners>
@@ -14,7 +14,7 @@
     <description>SQL Server Management Objects (SMO) is a collection of objects that are designed for programming all aspects of managing Microsoft SQL Server. SQL Server Replication Management Objects (RMO) is a collection of objects that encapsulates SQL Server replication management.</description>
     <packageSourceUrl>https://github.com/johnbowker/choco-mssql-deployment</packageSourceUrl>
     <dependencies>
-      <dependency id="sql2016-clrtypes" version="[13.0.1601.5]" />
+      <dependency id="sql2016-clrtypes" version="[13.0.5026.0]" />
       <dependency id="chocolatey-uninstall.extension" />
     </dependencies>
   </metadata>
